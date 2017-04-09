@@ -4,7 +4,7 @@
   "description": "Lookup Korea Digital Media Highshcool's Meal",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "standard && npm run start",
     "dev": "nodemon . --exec babel-node",
     "start": "babel-node ."
   },
