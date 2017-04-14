@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 
 import program from 'commander'
+import handler from './lib/option-handler'
 
 program
   .version('1.0.0')
-  .option('-y, --yesterday', 'Print yesterday dimigo meal information')
-  .option('-b, --breakfast', 'Print breakfast information')
-  .option('-l, --launch', 'Print luanch information')
-  .option('-d, --dinner', 'Print dinner information')
-  .option('-s, --snack', 'Print snack information')
-  .option('-a, --all', 'Print every meal information today')
+  .option('-t, --today', 'output today dimigo meal information. (default)', handler.today())
+  .option('-b, --breakfast', 'output breakfast information.', handler.breakfast())
+  .option('-l, --launch', 'output luanch information.', handler.lunch())
+  .option('-d, --dinner', 'output dinner information.', handler.dinner())
+  .option('-s, --snack', 'output snack information.', handler.snack())
+  .option('-a, --all', 'output every meal information.', handler.all())
 
 program.parse(process.argv)
+
+handler.execute()
