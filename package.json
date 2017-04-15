@@ -1,6 +1,6 @@
 {
-  "name": "node-dimibob",
-  "version": "1.0.0",
+  "name": "dimibob",
+  "version": "1.0.1",
   "description": "Lookup Korea Digital Media Highshcool's Meal",
   "main": "index.js",
   "scripts": {
@@ -30,12 +30,6 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-eslint": "^7.2.1",
-    "babel-preset-env": "^1.3.3",
-    "babel-preset-stage-3": "^6.24.1",
-    "eslint": "^3.19.0",
     "nodemon": "^1.11.0",
     "standard": "^10.0.1"
   }
