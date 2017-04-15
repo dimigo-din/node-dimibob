@@ -1,17 +1,23 @@
 #!/usr/bin/env node
+const dimibob = require('./lib/dimibob')
 
-import program from 'commander'
-import handler from './lib/option-handler'
+async function bob () {
+  const req = new Proxy(await dimibob() || {}, {
+    get (target, name) {
+      return name in target
+        ? target[name].split('/').join(', ')
+        : 'X'
+    }
+  })
+  console.log('오늘도 맛있는 아라코 ^^')
+  console.log(`
+  ${new Date().toDateString()}
 
-program
-  .version('1.0.0')
-  .option('-t, --today', 'output today dimigo meal information. (default)', handler.today())
-  .option('-b, --breakfast', 'output breakfast information.', handler.breakfast())
-  .option('-l, --launch', 'output luanch information.', handler.lunch())
-  .option('-d, --dinner', 'output dinner information.', handler.dinner())
-  .option('-s, --snack', 'output snack information.', handler.snack())
-  .option('-a, --all', 'output every meal information.', handler.all())
+  아침 : ${req.breakfast}
+  점심 : ${req.lunch}
+  저녁 : ${req.dinner}
+  간식 : ${req.snack}
+  `)
+}
 
-program.parse(process.argv)
-
-handler.execute()
+try { bob() } catch (err) { console.error(err) }

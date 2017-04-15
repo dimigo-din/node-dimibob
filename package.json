@@ -4,9 +4,9 @@
   "description": "Lookup Korea Digital Media Highshcool's Meal",
   "main": "index.js",
   "scripts": {
-    "test": "standard && npm run start",
-    "dev": "nodemon . --exec babel-node",
-    "start": "babel-node ."
+    "lint" : "standard",
+    "test": "standard && node .",
+    "dev": "nodemon ."
   },
   "repository": {
     "type": "git",
@@ -16,14 +16,17 @@
     "meal",
     "dimigo"
   ],
-  "author": "MuRye <dreamaker7770@gmail.com>",
+  "preferGlobal": true,
+  "bin": {
+    "dimibob": "./index.js"
+  },
+  "author": "MuRye <psm@mail.murye.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MuRyes/node-dimibob/issues"
   },
   "homepage": "https://github.com/MuRyes/node-dimibob#readme",
   "dependencies": {
-    "commander": "^2.9.0",
     "request": "^2.81.0"
   },
   "devDependencies": {
