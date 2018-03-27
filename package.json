@@ -1,33 +1,34 @@
 {
   "name": "dimibob",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Lookup Korea Digital Media Highshcool's Meal",
   "main": "index.js",
   "scripts": {
-    "lint" : "standard",
+    "lint": "standard",
     "test": "standard && node .",
     "dev": "nodemon ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MuRyes/node-dimibob.git"
+    "url": "git+https://github.com/a1p4ca/node-dimibob.git"
   },
   "keywords": [
     "meal",
-    "dimigo"
+    "dimigo",
+    "dimigoin"
   ],
   "preferGlobal": true,
   "bin": {
     "dimibob": "./index.js"
   },
-  "author": "MuRye <psm@mail.murye.io>",
+  "author": "a1p4ca <sm@murye.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MuRyes/node-dimibob/issues"
+    "url": "https://github.com/a1p4ca/node-dimibob/issues"
   },
-  "homepage": "https://github.com/MuRyes/node-dimibob#readme",
+  "homepage": "https://github.com/a1p4ca/node-dimibob#readme",
   "dependencies": {
-    "request": "^2.81.0"
+    "r2": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
