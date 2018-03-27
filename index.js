@@ -13,7 +13,8 @@ async function bob (date = new Date()) {
   아침: ${meal('breakfast')}
   점심: ${meal('lunch')}
   저녁: ${meal('dinner')}
-  간식: ${meal('snack')}`)
+  간식: ${meal('snack')}
+  `)
 }
 
 bob().catch(err => console.error(err) || process.exit(1))
