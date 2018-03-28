@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/dimibob
+    docker:
+      - image: circleci/node:9.9.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: deps-{{ checksum "package.json" }}
+
+      - run: yarn install
+      - save_cache:
+          paths: [node_modules]
+          key: deps-{{ checksum "package.json" }}
+
+      - run: yarn test
