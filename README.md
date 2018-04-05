@@ -30,7 +30,7 @@ dimibob.daily().then(console.log)
 ## API
 
 ### `dimibob()`
-Fetches meal data of specific date.
+Fetches meal data of specific day.
 ```js
 import dimibob from 'dimibob'
 
@@ -56,6 +56,8 @@ The [date] on which you want to fetch meal data. If `date` is omitted, `new Date
 Just an alias of `dimibob()`.
 
 ### `dimibob.monthly()`
+Fetches meal list of every days of specific month.
+
 ```js
 import { monthly } from 'dimibob'
 
