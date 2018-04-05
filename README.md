@@ -6,7 +6,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
 
 한국디지털미디어고등학교 급식 조회 프로그램<br>
-Lookup meals information for [Korea Digital Media Highshcool](https://www.dimigo.hs.kr/).
+Lookup meals information for [Korea Digital Media Highschool](https://www.dimigo.hs.kr/).
 
 ## Install
 ```

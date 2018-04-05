@@ -1,7 +1,7 @@
 {
   "name": "dimibob",
   "version": "1.2.0",
-  "description": "Lookup meals information for Korea Digital Media Highshcool",
+  "description": "Lookup meals information for Korea Digital Media Highschool",
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
