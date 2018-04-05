@@ -5,12 +5,11 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
-    "test": "standard && node .",
-    "dev": "nodemon ."
+    "test": "standard && node test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/a1p4ca/node-dimibob.git"
+    "url": "git+https://github.com/dimigoin/node-dimibob.git"
   },
   "keywords": [
     "school",
@@ -23,18 +22,18 @@
   },
   "contributors": [
     "a1p4ca <sm@murye.io>",
+    "Chalk <chalk@chalk.pe>",
     "Astro36 <astr36@naver.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/a1p4ca/node-dimibob/issues"
+    "url": "https://github.com/dimigoin/node-dimibob/issues"
   },
-  "homepage": "https://github.com/a1p4ca/node-dimibob#readme",
+  "homepage": "https://github.com/dimigoin/node-dimibob#readme",
   "dependencies": {
     "r2": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.17.3",
     "standard": "^11.0.1"
   }
 }
