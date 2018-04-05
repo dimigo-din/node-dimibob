@@ -42,7 +42,7 @@ async function example () {
 
 #### Syntax
 ```js
-async function dimibob(date: Date?): Meal
+function dimibob(date: Date?): Promise<Meal>
 ```
 
 #### Parameters
@@ -67,7 +67,7 @@ async function example () {
 
 #### Syntax
 ```js
-async function monthly(date: Date?): Meal[]
+function monthly(date: Date?): Promise<Meal[]>
 ```
 
 #### Parameters
@@ -78,4 +78,4 @@ The [date] on which you want to fetch meal data. If `date` is omitted, `new Date
 An array of [meal object] containing *monthly* meal data.
 
 [date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-[meal object]: #meal-model
+[meal object]: https://api.dimigo.in/#!/dimibobs/get_dimibob_today_resource
