@@ -1,8 +1,8 @@
 {
   "name": "dimibob",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Lookup Korea Digital Media Highshcool's Meal",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
     "test": "standard && node .",
@@ -13,15 +13,18 @@
     "url": "git+https://github.com/a1p4ca/node-dimibob.git"
   },
   "keywords": [
+    "school",
     "meal",
     "dimigo",
     "dimigoin"
   ],
-  "preferGlobal": true,
   "bin": {
-    "dimibob": "./index.js"
+    "dimibob": "bin/index.js"
   },
-  "author": "a1p4ca <sm@murye.io>",
+  "contributors": [
+    "a1p4ca <sm@murye.io>",
+    "Astro36 <astr36@naver.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/a1p4ca/node-dimibob/issues"
@@ -31,7 +34,7 @@
     "r2": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
-    "standard": "^10.0.1"
+    "nodemon": "^1.17.3",
+    "standard": "^11.0.1"
   }
 }
