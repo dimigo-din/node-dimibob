@@ -7,11 +7,11 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: deps-{{ checksum "package.json" }}
+          key: deps-{{ checksum "yarn.lock" }}
 
       - run: yarn install
       - save_cache:
           paths: [node_modules]
-          key: deps-{{ checksum "package.json" }}
+          key: deps-{{ checksum "yarn.lock" }}
 
       - run: yarn test
