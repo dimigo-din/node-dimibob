@@ -1,7 +1,7 @@
 {
   "name": "dimibob",
-  "version": "1.2.0",
-  "description": "Lookup meals information for Korea Digital Media Highschool",
+  "version": "1.3.0",
+  "description": "Lookup meals information of Korea Digital Media Highschool",
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/dimigoin/node-dimibob#readme",
   "dependencies": {
-    "r2": "^2.0.0"
+    "r2": "^2.0.1"
   },
   "devDependencies": {
     "standard": "^11.0.1"

@@ -1,12 +1,12 @@
 const dimibob = require('../lib')
 const { string: fmt } = require('../lib/fmt')
 
-const show = ({ breakfast, lunch, dinner, snack }) =>
-  `아침: ${fmt(breakfast)}\n점심: ${fmt(lunch)}\n저녁: ${fmt(dinner)}\n간식: ${fmt(snack)}\n`
+const show = ({ date, breakfast, lunch, dinner, snack }) =>
+  `[${date}]\n아침: ${fmt(breakfast)}\n점심: ${fmt(lunch)}\n저녁: ${fmt(dinner)}\n간식: ${fmt(snack)}\n`
 
 async function test (now = new Date()) {
-  console.log('Daily:\n' + show(await dimibob.daily(now)))
-  console.log('Monthly:\n' + (await dimibob.monthly(now)).map(show).join('\n'))
+  console.log('----- dimibob.daily -----\n' + show(await dimibob.daily(now)))
+  console.log('----- dimibob.monthly -----\n' + (await dimibob.monthly(now)).map(show).join('\n'))
 }
 
 test()

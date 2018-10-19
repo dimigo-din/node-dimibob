@@ -6,11 +6,12 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
 
 한국디지털미디어고등학교 급식 조회 프로그램<br>
-Lookup meals information for [Korea Digital Media Highschool](https://www.dimigo.hs.kr/).
+Lookup meals information of [Korea Digital Media Highschool](https://dimigo.hs.kr/).
 
 ## Install
-```
-$ npm install dimibob
+```bash
+$ npm i dimibob
+$ yarn add dimibob
 ```
 
 ## Usage
@@ -27,6 +28,21 @@ dimibob.daily().then(console.log)
   date: '2018-04-05' }
 ```
 
+### CLI
+```bash
+# install
+$ npm i dimibob -g
+$ yarn global add dimibob
+
+# show daily meal
+$ dimibob
+```
+
+## Why not [calcium](https://npmjs.com/package/calcium)?
+Short answer: *You can't*.
+
+KDMHS *does not* upload its meal information to NEIS server but to [its official homepage](https://dimigo.hs.kr/index.php?mid=school_cafeteria). This module uses [another source](https://dimigo.in) that constantly provides machine-readable meal data by using [dimibob-py](https://github.com/ChalkPE/dimibob-py).
+
 ## API
 
 ### `dimibob()`
@@ -42,12 +58,15 @@ async function example () {
 
 #### Syntax
 ```js
-function dimibob(date: Date?): Promise<Meal>
+function dimibob(date: Date?, endpoint: String?): Promise<Meal>
 ```
 
 #### Parameters
 ##### date (optional)
-The [date] on which you want to fetch meal data. If `date` is omitted, `new Date()` is used instead.
+The [date] on which you want to fetch meal data. Defaults to `new Date()`.
+
+##### endpoint (optional)
+URL of Meal API endpoint. Trailing slash is required. Defaults to [`endpoint.dev`](lib/endpoint.js).
 
 #### Return value
 [Meal object] containing the meal data.
@@ -69,15 +88,17 @@ async function example () {
 
 #### Syntax
 ```js
-function monthly(date: Date?): Promise<Meal[]>
+function monthly(date: Date?, endpoint: String?): Promise<Meal[]>
 ```
 
 #### Parameters
-##### date (optional)
-The [date] on which you want to fetch meal data. If `date` is omitted, `new Date()` is used instead.
+See [`dimibob()`](#parameters)
 
 #### Return value
 An array of [meal object] containing *monthly* meal data.
 
 [date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 [meal object]: https://api.dimigo.in/#!/dimibobs/get_dimibob_today_resource
+
+## License
+[MIT License](LICENSE)
