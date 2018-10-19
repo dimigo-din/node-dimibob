@@ -1,5 +1,6 @@
 # node-dimibob
 [![CircleCI](https://img.shields.io/circleci/project/github/dimigoin/node-dimibob.svg?style=flat-square)](https://circleci.com/gh/dimigoin/node-dimibob)
+![node version](https://img.shields.io/node/v/dimibob.svg?style=flat-square)
 ![npm version](https://img.shields.io/npm/v/dimibob.svg?style=flat-square)
 ![npm license](https://img.shields.io/npm/l/dimibob.svg?style=flat-square)
 ![npm downloads](https://img.shields.io/npm/dt/dimibob.svg?style=flat-square)
