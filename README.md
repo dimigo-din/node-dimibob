@@ -4,7 +4,7 @@
 ![npm version](https://img.shields.io/npm/v/dimibob.svg?style=flat-square)
 ![npm license](https://img.shields.io/npm/l/dimibob.svg?style=flat-square)
 ![npm downloads](https://img.shields.io/npm/dt/dimibob.svg?style=flat-square)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com) [![Greenkeeper badge](https://badges.greenkeeper.io/dimigoin/node-dimibob.svg)](https://greenkeeper.io/)
 
 한국디지털미디어고등학교 급식 조회 프로그램<br>
 Lookup meals information of [Korea Digital Media Highschool](https://dimigo.hs.kr/).
